@@ -1,0 +1,170 @@
+.reviews {
+  &__title {
+    text-align: center;
+    margin-bottom: 45px;
+  }
+}
+
+.slider {
+  z-index: 1;
+}
+
+.blockquote {
+  padding: 0 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 49px;
+
+  &__img {
+    border-radius: 50%;
+  }
+}
+
+.blockquote-content {
+
+  &__item {
+    max-width: 650px;
+    width: 100%;
+  }
+
+  &__text {
+    display: block;
+    position: relative;
+    font-style: italic;
+    line-height: 1.5;
+    padding-left: 42px;
+    margin-bottom: 30px;
+
+    &::before {
+      content: '';
+      background-image: url(../images/sprite.svg#icon-quote-open);
+      background-size: 24px 20px;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: block;
+      width: 24px;
+      height: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      content: '';
+      background-image: url(../images/sprite.svg#icon-quote-close);
+      background-size: 24px 20px;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: block;
+      width: 24px;
+      height: 20px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  &__author {
+    padding-left: 42px;
+    font-weight: 500;
+    color: $orange-900;
+    max-width: 197px;
+    width: 100%;
+    display: block;
+    line-height: 1.5;
+    font-style: normal;
+  }
+
+  &__descr {
+    color: $dark;
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+  }
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+
+  li {
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  button {
+    display: block;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: $gray;
+    font-size: 0;
+
+    &:focus {
+      background-color: $gray;
+      box-shadow: 0px 0px 0px 2px $orange-900;
+    }
+
+    &:hover {
+      background-color: $rose-white;
+      box-shadow: 0px 0px 0px 2px rgba(255, 122, 80, 0.7);
+    }
+
+    &:active {
+      background-color: $rose-bud;
+    }
+  }
+
+  li.slick-active button {
+    background-color: $orange-900;
+  }
+}
+
+.slider-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 220px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  height: 35px;
+
+  &__icon {
+    border: 2px solid $gray;
+    padding: 8px 11px;
+    border-radius: 50%;
+    display: block;
+    width: 35px;
+    height: 35px;
+    transition: background-color 0.3s, box-shadow 0.3s, fill 0.3s;
+
+    &:focus {
+      background-color: rgba(255, 255, 255, 0.01);
+      border: 3px solid $gray;
+      box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.7);
+    }
+
+    &:hover {
+      background-color: $rose-white;
+      border: 3px solid $rose-bud;
+      fill: $rose-bud;
+    }
+
+    &:active {
+      background-color: $rose-white;
+      border: 3px solid $rose-white;
+      fill: $coral;
+    }
+  }
+
+  &__dots {
+    padding: 0px 23px;
+  }
+}

@@ -1,33 +1,10 @@
-$default: #31352B;
-$accent: #FF6838;
-$title: #363853;
-$background: #F9FAFF;
-$white: #FFF;
+$orange-900: #FF6838;
+$silver-200: #ECECEC;
 $gray: #C2C2C2;
-$border: #ECECEC;
-$icon-color: #FFF2ED;
-$box-shadow: rgba(255, 104, 56, 0.7);
-$text-shadow: rgba(49, 53, 43, 0.5);
-$focus-color: rgba(255, 122, 80, 0.1);
-$active-color: rgba(255, 104, 56, 0.2);
-$black: rgba(255, 255, 255, 0.1);
-
-%rubik-300 {
-  font-family: 'Rubik-Light', sans-serif;
-  font-weight: 300;
-}
-
-%rubik-400 {
-  font-family: 'Rubik-Regular', sans-serif;
-  font-weight: 400;
-}
-
-%rubik-500 {
-  font-family: 'Rubik-Medium', sans-serif;
-  font-weight: 500;
-}
-
-%rubik-600 {
-  font-family: 'Rubik-SemiBold', sans-serif;
-  font-weight: 600;
-}
+$darkBlue-900: #363853;
+$dark: #31352B;
+$silver-100: #F9FAFF;
+$white: #FFF;
+$rose-white: #FFF2ED;
+$rose-bud: #FFAE94;
+$coral: #FF7A50;
